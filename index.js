@@ -32,7 +32,7 @@ const session = expressSession({
 // MIDDLEWARES
 app.use(cookieParser());
 app.use(session);
-app.use(cors({ origin: "http://localhost:5173", credentials: true }));
+app.use(cors({ origin: "https://megashop-eta.vercel.app", credentials: true }));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use('/public', express.static(path.join(__dirname, 'public')));
